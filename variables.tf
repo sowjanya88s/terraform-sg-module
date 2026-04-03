@@ -2,7 +2,7 @@ variable "project" {
     type = string
 }
 
-variable "sg_names" {
+variable "sg_name" {
     type = list
 }
 
