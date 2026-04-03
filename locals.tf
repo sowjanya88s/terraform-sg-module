@@ -1,7 +1,7 @@
 locals {
     common_tags = {
-        project = "roboshop"
-        default = "dev"
+        project = var.project
+        default = var.environment
         terraform = "true"
     }
 }

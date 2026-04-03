@@ -4,7 +4,6 @@ variable "project" {
 
 variable "component" {
     type = string
-    default = "mongodb"
 }
 
 variable "environment" {
