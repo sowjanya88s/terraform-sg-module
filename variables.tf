@@ -2,8 +2,8 @@ variable "project" {
     type = string
 }
 
-variable "component" {
-    type = string
+variable "sg_names" {
+    type = list
 }
 
 variable "environment" {

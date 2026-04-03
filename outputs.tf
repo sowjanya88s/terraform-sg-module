@@ -1,3 +1,3 @@
-output "mongodb_sg_id" {
-    value = aws_security_group.roboshop-mongodb.id
+output "sg_ids" {
+    value = aws_security_group.roboshop.id
 }

@@ -1,12 +1,12 @@
-resource "aws_security_group" "roboshop-mongodb" {
-  name        = "${var.project}-${var.environment}-${var.component}-sg"
-  description = "sg for ${var.component}"
+resource "aws_security_group" "roboshop" {
+  name        = "${var.project}-${var.environment}-${var.sg_names}-sg"
+  description = "sg for ${var.sg_names}"
   vpc_id      = var.vpc_id
   tags = merge(local.common_tags,
     {
-    Name = "${var.project}-${var.environment}-${var.component}-sg"
+    Name = "${var.project}-${var.environment}-${var.sg_names}"
   },
-  var.mongodb_sg_tags
+  var.sg_tags
   )
 
 
