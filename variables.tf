@@ -12,7 +12,7 @@ variable "environment" {
 }
 
 variable "mongodb_sg_tags" {
-    type = string
+    type = map
     default = {}
 }
 
