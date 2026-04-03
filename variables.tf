@@ -3,7 +3,7 @@ variable "project" {
 }
 
 variable "sg_name" {
-    type = list
+    type = string
 }
 
 variable "environment" {
