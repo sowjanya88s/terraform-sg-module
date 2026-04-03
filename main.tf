@@ -1,10 +1,10 @@
 resource "aws_security_group" "roboshop" {
-  name        = "${var.project}-${var.environment}-${var.sg_names}-sg"
-  description = "sg for ${var.sg_names}"
+  name        = "${var.project}-${var.environment}-${var.sg_name}-sg"
+  description = "sg for ${var.sg_name}"
   vpc_id      = var.vpc_id
   tags = merge(local.common_tags,
     {
-    Name = "${var.project}-${var.environment}-${var.sg_names}"
+    Name = "${var.project}-${var.environment}-${var.sg_name}"
   },
   var.sg_tags
   )
